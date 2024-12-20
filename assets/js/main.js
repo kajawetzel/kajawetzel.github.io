@@ -14,4 +14,3 @@ document.addEventListener("DOMContentLoaded", function () {
       carousel.appendChild(clone); // Zweites Duplizieren für lange Listen
     });
   });
-  
