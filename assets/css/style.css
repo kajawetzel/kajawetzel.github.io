@@ -70,6 +70,10 @@ background-color: transparent;
 }
 
 /*MENU_________________________________________________________________*/
+h1, h2, p {
+  font-family: gt america;
+}
+
 .menu{
   position: fixed;  
   top: 480px;
@@ -83,18 +87,17 @@ h1 {
   font-size: 3rem;
   text-transform: uppercase;
   /*text-shadow: rgb(255, 255, 0) 0 0 50px;  */
-  color: yellow;
+  color: white;
 }
 
 h2{
   margin-left: 3rem;
   font-size: 1rem;
-  color: yellow;
- 
+  color: white;
 }
 
 p{
-color: rgb(255, 255, 0);
+color: white;
 font-size: 1.1rem;
 font-family: 'Times New Roman', Times, serif;
 padding: 5px;
