@@ -61,10 +61,6 @@ img:hover {
   z-index: 0;
 }
 
-.container-img:nth-child(2n){
-  transform: rotateY(-20deg);
-}
-
 .plz {
 position: fixed;
 left:20px;
@@ -73,20 +69,28 @@ z-index: 10;
 background-color: transparent;
 }
 
-/*Landing page on top_________________________________________________________________*/
+/*MENU_________________________________________________________________*/
+.menu{
+  position: fixed;  
+  top: 480px;
+  right: -10px;
+  z-index: 5;
+  transform: perspective(150px) rotateX(70deg) rotateZ(-60deg);
+}
+
+
 h1 {
-  position: fixed;
-  font-size: 9rem;
+  font-size: 3rem;
   text-transform: uppercase;
   /*text-shadow: rgb(255, 255, 0) 0 0 50px;  */
-  color: rgb(161, 160, 160);
-  top: 35px;
-  left: 70px;
-  text-align: start;
-  width: 100vw;
-  word-break: break-all;
-  z-index: 5;
-  background-color: transparent;
+  color: yellow;
+}
+
+h2{
+  margin-left: 3rem;
+  font-size: 1rem;
+  color: yellow;
+ 
 }
 
 p{
@@ -124,19 +128,6 @@ color: yellow;
 text-decoration: underline;
 }
 
-.arrow {
-position: fixed;
-right: 15vw;
-top: -80px;
-font-size: 30rem;
-color:rgb(255, 255, 0);
-/*text-shadow: rgb(255, 255, 0) 0 0 50px;*/
-border: none;
-background-color: transparent;
-perspective: 1500px; /* 3D-Perspektive aktivieren */
-transform: rotateX(45deg) rotateZ(-45deg);
-z-index: 0;
-}
 
 .item-text-explain{
 background-color: transparent;
