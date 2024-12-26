@@ -13,4 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const clone = item.cloneNode(true);
       carousel.appendChild(clone); // Zweites Duplizieren für lange Listen
     });
+
+
   });
+
+

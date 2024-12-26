@@ -12,23 +12,25 @@ html {
 /*Landing page gallery_________________________________________________________________*/
 main{
   overflow: hidden;
-  background-color: rgb(161, 160, 160);
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
 }
 
 .section-gallery{
   transform: perspective(600px) rotateY(40deg);
-  height: 100vh;
   overflow-y: hidden;
   scrollbar-width: none; /* Versteckt den Scrollbalken (optional) */
   -ms-overflow-style: none; /* Versteckt den Scrollbalken für IE/Edge */
-  margin-left: 300px;
+  width: 150%
 }
 
 .carousel::-webkit-scrollbar {
   display: none; /* Versteckt den Scrollbalken in Webkit-Browsern */
 }
+
 .carousel-item {
-  height: 80vh;
+  height: 70vh;
   filter: sepia(0.1);
   transition: transform 0.2s ease, filter 0.5s ease;
 }
@@ -48,7 +50,7 @@ img:hover {
 .carousel {
   display: flex;
   margin-top: 9vh;
-  
+  scroll-behavior: smooth
 }
 
 .container-img {
