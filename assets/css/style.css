@@ -41,33 +41,10 @@ main{
   transition: transform 0.2s ease, filter 0.5s ease;
 }
 
-.img-test{
-  height: 70vh;
-  width: 100px;
-  background-color: red;
-}
-
-.side{
-  display: none;
-  position: absolute;
-}
-
-.side-left{
-  height: calc(70vh * 1.2);
-  width: 200px;
-  background-color: blue;
-  transform: rotateY(-90deg) translateZ(100px);
-  border: 2px solid rgb(85, 18, 18);
-
-}
-
-.test-img:hover{
-  transform: scale(1.2);
-}
 
 img:hover {
   filter: none;
-
+  filter:brightness(1.2);
 }
 
 .container-img {
@@ -135,7 +112,7 @@ font-size: 1.1rem;
 font-family: 'Times New Roman', Times, serif;
 padding: 5px;
 }
-
+/*
 .heading-text-explain{
 text-transform: uppercase;
 margin-bottom: -8px;
@@ -184,29 +161,49 @@ color: yellow;
 position: fixed;
 top: 20px;
 right:80px;
-}
-/*Details-section_________________________________________________________________*/
-.wrapper-content-details {
-display: flex;
-padding: 20px;
-}
+}*/
 
-.details-img {
-width: 25vw;
-}
-
-.section-details-text{
-margin: 50px;
-}
-
-.details-text{
-color: black;
-}
 /*POSTS_________________________________________________________________*/
-.img-posts{
-  height: 20vh;
-  border: 2px solid red
+.section-img-posts{
+  display: flex;
+  justify-content: center;
+
 }
+
+.img-posts {
+  width: 20vw;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Container Perspective */
+.container-img-posts {
+  display: flex;
+  transform-style: preserve-3d;
+  perspective: 600px;
+}
+
+/* Erstes Bild: nach hinten */
+.container-img-posts img:nth-child(1) {
+  transform: rotateY(45deg) translateZ(-50px);
+  opacity: 0.8;
+}
+
+/* Zweites Bild: bleibt normal */
+.container-img-posts img:nth-child(2) {
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+
+/* Drittes Bild: nach vorne */
+.container-img-posts img:nth-child(3) {
+  transform: rotateY(-45deg) translateZ(50px);
+  opacity: 0.8;
+}
+
+.container-img-posts img:nth-child(n+4) {
+  display: none;
+}
+
 
 /*Sonstiges_________________________________________________________________*/
 .invisible {
