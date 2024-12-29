@@ -202,6 +202,11 @@ margin: 50px;
 .details-text{
 color: black;
 }
+/*POSTS_________________________________________________________________*/
+.img-posts{
+  height: 20vh;
+  border: 2px solid red
+}
 
 /*Sonstiges_________________________________________________________________*/
 .invisible {
