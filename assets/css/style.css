@@ -165,8 +165,8 @@ right:80px;
 
 /*POSTS_________________________________________________________________*/
 .img-posts {
-  width: 30vw;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  height: 70vh;
+  transition: opacity 0.5s ease;
 }
 
 @media only screen and (min-width: 1000px) {
