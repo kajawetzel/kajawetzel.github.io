@@ -165,14 +165,7 @@ right:80px;
 
 /*POSTS_________________________________________________________________*/
 .img-posts {
-  height: 70vh;
-  transition: opacity 0.5s ease;
-}
-
-@media only screen and (min-width: 1000px) {
-  .img-posts {
-    width: 28vw;
-  }
+  height: 80vh;
 }
 
 .container-img-posts {
