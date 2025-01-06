@@ -8,16 +8,16 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  font-size: 16px;
 }
-/*Landing page gallery_________________________________________________________________*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
+a{
+  text-decoration: none;
 }
 
 main {
@@ -27,6 +27,30 @@ main {
   height: 100vh;
 }
 
+h1, h2 {
+  font-family: Font1;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  /*text-shadow: rgb(255, 255, 0) 0 0 50px;  */
+  color: white;
+}
+
+h2{
+  margin-left: 3rem;
+  font-size: 1rem;
+  color: white;
+}
+
+p{
+color: white;
+font-size: 1.1rem;
+font-family: Font1;
+padding: 5px;
+}
+/*LANDING PAGE_________________________________________________________________*/
 .section-gallery {
   transform: perspective(600px) rotateY(40deg);
   overflow-y: hidden;
@@ -70,30 +94,6 @@ img:hover {
   }
 }
 
-
-/*
-.plz {
-position: fixed;
-left:20px;
-bottom: 3vh;
-z-index: 10;
-background-color: transparent;
-}
-
-.text-on-img{
-  position: absolute;
-  bottom: 12px;
-  right: 10px;
-  background-color: transparent;
-  font-size: 0.6rem;
-}
-*/
-/*MENU_________________________________________________________________*/
-h1, h2 {
-  font-family: Font1;
-}
-
-
 .menu{
   position: fixed;  
   top: 480px;
@@ -102,77 +102,8 @@ h1, h2 {
   transform: perspective(150px) rotateX(70deg) rotateZ(-60deg);
 }
 
-h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  /*text-shadow: rgb(255, 255, 0) 0 0 50px;  */
-  color: white;
-}
-
-h2{
-  margin-left: 3rem;
-  font-size: 1rem;
-  color: white;
-}
-
-p{
-color: white;
-font-size: 1.1rem;
-font-family: Font2;
-padding: 5px;
-}
-/*
-.heading-text-explain{
-text-transform: uppercase;
-margin-bottom: -8px;
-}
-
-.text-description {
-position: fixed;
-top: 180px;
-width: 27vw;
-left: 80px;
-}
-
-.container-explain {
-position: fixed;
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-background-color: transparent;
-top:250px;
-right: 80px;
-gap: 50px;
-}
-
-.text-explain-link-form {
-color: yellow;
-text-decoration: underline;
-}
-
-
-.item-text-explain{
-background-color: transparent;
-}
-
-.text-explain {
-width: 27vw;
-}
-
-#toggle-section:checked ~ #section-to-toggle {
-display: none;
-}
-
-label {
-cursor: pointer;
-font-size: 1rem;
-color: yellow;
-position: fixed;
-top: 20px;
-right:80px;
-}*/
-
-/*POSTS_________________________________________________________________*/
+/*SUBPAGES________________________________________________________________*/
+/*Images*/
 .img-posts {
   height: 80vh;
 }
@@ -186,6 +117,7 @@ right:80px;
   height: 100vh;
   perspective: 700px;
   gap: 3px;
+  margin-top: -5vh;
 }
 
 .container-img-posts img:nth-child(1) {
@@ -209,9 +141,30 @@ right:80px;
   display: none;
 }
 
+/*Typo*/
 .section-text-posts{
   z-index: 10;
   position: relative;
+}
+.section-text-posts{
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  top: 15vh;
+  left: 15vw;
+}
+
+.container-text-posts{
+  width: 30vw;
+  margin-top: -8px;
+}
+
+.title-subpage{
+  font-family: Font1;
+  font-size: 4rem;
+}
+.description-text-subpage{
+  padding-top: 1rem;
 }
 
 /*Buttons*/
@@ -222,46 +175,23 @@ right:80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .btn{
-  height: 40px;
-  width: 100px;
   margin: 50px;
   color: white;
-  background-color: black;
+  background-color: transparent;
   border: none;
-  border-radius: 3px;
   z-index: 100;
+  font-size: 2rem;
+  font-family: Font1;
 }
 
-.section-text-posts{
-  display: flex;
-  position: fixed;
-  top: 10vh;
-  left: 10vw;
-  gap: 40px;
+.btn:hover{
+  transform: scale(170%);
 }
 
-.container-text-posts{
-  width: 30vw;
-}
-
-.title-subpage{
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  background-color: black;
-  padding: 10px;
-
-}
-
-.details-text-subpage{
-  background-color: black;
-  padding: 10px;
-}
-
-/*Sonstiges_________________________________________________________________*/
+/*SONSTIGES_________________________________________________________________*/
 .invisible {
 display: none;
 }
