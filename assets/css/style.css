@@ -89,9 +89,10 @@ background-color: transparent;
 }
 */
 /*MENU_________________________________________________________________*/
-h1, h2, p {
+h1, h2 {
   font-family: Font1;
 }
+
 
 .menu{
   position: fixed;  
@@ -117,7 +118,7 @@ h2{
 p{
 color: white;
 font-size: 1.1rem;
-font-family: 'Times New Roman', Times, serif;
+font-family: Font2;
 padding: 5px;
 }
 /*
@@ -232,8 +233,33 @@ right:80px;
   background-color: black;
   border: none;
   border-radius: 3px;
+  z-index: 100;
 }
 
+.section-text-posts{
+  display: flex;
+  position: fixed;
+  top: 10vh;
+  left: 10vw;
+  gap: 40px;
+}
+
+.container-text-posts{
+  width: 30vw;
+}
+
+.title-subpage{
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  background-color: black;
+  padding: 10px;
+
+}
+
+.details-text-subpage{
+  background-color: black;
+  padding: 10px;
+}
 
 /*Sonstiges_________________________________________________________________*/
 .invisible {
