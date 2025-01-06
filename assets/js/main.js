@@ -1,23 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.querySelector(".carousel");
   const items = Array.from(carousel.children);
-
-  // Dupliziere die Elemente für eine endlose Galerie
+  
+  // Clone items to create an illusion of infinity
   items.forEach((item) => {
     const clone = item.cloneNode(true);
-    carousel.appendChild(clone); // Hänge sie ans Ende
+    carousel.appendChild(clone); // Append clones to the end
   });
 
-  // Option: Klone erneut, falls die Galerie sehr groß ist
   items.forEach((item) => {
     const clone = item.cloneNode(true);
-    carousel.appendChild(clone); // Zweites Duplizieren für lange Listen
+    carousel.insertBefore(clone, items[0]); // Prepend clones to the beginning
   });
 
 });
-
-
-
-
-
-

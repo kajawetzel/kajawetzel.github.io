@@ -10,41 +10,48 @@ html {
   scroll-behavior: smooth;
 }
 /*Landing page gallery_________________________________________________________________*/
-main{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+main {
   overflow: hidden;
   background-color: black;
   width: 100vw;
   height: 100vh;
 }
 
-.section-gallery{
+.section-gallery {
   transform: perspective(600px) rotateY(40deg);
   overflow-y: hidden;
-  scrollbar-width: none; /* Versteckt den Scrollbalken (optional) */
-  -ms-overflow-style: none; /* Versteckt den Scrollbalken für IE/Edge */
-  width: 150%
-}
-
-.carousel::-webkit-scrollbar {
-  display: none; /* Versteckt den Scrollbalken in Webkit-Browsern */
+  scrollbar-width: none; /* Hides the scrollbar (optional) */
+  -ms-overflow-style: none; /* Hides the scrollbar for IE/Edge */
+  width: 150vw;
 }
 
 .carousel {
   display: flex;
   margin-top: 9vh;
-  scroll-behavior: smooth
+  width: 100%;
+  animation: scroll-carousel 8s linear infinite; /* Continuous scrolling animation */
 }
 
 .carousel-item {
   height: 70vh;
   filter: sepia(0.1);
   transition: transform 0.2s ease, filter 0.5s ease;
+  flex-shrink: 0; /* Prevent items from shrinking */
 }
-
 
 img:hover {
   filter: none;
-  filter:brightness(1.2);
+  filter: brightness(1.2);
 }
 
 .container-img {
@@ -54,13 +61,15 @@ img:hover {
   z-index: 0;
 }
 
-.img-link:hover + .sides{
-  display: block;
+@keyframes scroll-carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Move everything to the left */
+  }
 }
 
-.container-img:hover .sides {
-  display: block;
-}
 
 /*
 .plz {
@@ -91,7 +100,6 @@ h1, h2, p {
   z-index: 5;
   transform: perspective(150px) rotateX(70deg) rotateZ(-60deg);
 }
-
 
 h1 {
   font-size: 3rem;
