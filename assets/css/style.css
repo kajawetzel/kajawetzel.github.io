@@ -50,6 +50,7 @@ font-size: 1.1rem;
 font-family: Font1;
 padding: 5px;
 hyphens: auto;
+line-height: 1.25;
 }
 /*LANDING PAGE_________________________________________________________________*/
 .section-gallery {
@@ -101,6 +102,15 @@ img:hover {
   right: -10px;
   z-index: 5;
   transform: perspective(150px) rotateX(70deg) rotateZ(-60deg);
+}
+
+.menu:hover{
+  transform: perspective(0px) scale(150%);
+  right: 150px;
+}
+
+.menu-item:hover{
+  -webkit-text-stroke: 2px white;
 }
 
 /*SUBPAGES________________________________________________________________*/
@@ -184,12 +194,12 @@ img:hover {
   background-color: transparent;
   border: none;
   z-index: 100;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: Font1;
 }
 
 .btn:hover{
-  transform: scale(170%);
+  -webkit-text-stroke: 3px white;
 }
 
 /*SONSTIGES_________________________________________________________________*/
