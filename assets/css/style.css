@@ -39,9 +39,10 @@ h1 {
 }
 
 h2{
-  margin-left: 3rem;
+  margin-left: 2rem;
   font-size: 1rem;
   color: white;
+  line-height: 1;
 }
 
 p{
@@ -65,7 +66,7 @@ line-height: 1.25;
   display: flex;
   margin-top: 9vh;
   width: 100%;
-  animation: scroll-carousel 8s linear infinite; /* Continuous scrolling animation */
+ /* animation: scroll-carousel 8s linear infinite; /* Continuous scrolling animation */
 }
 
 .carousel-item {
@@ -98,10 +99,11 @@ img:hover {
 
 .menu{
   position: fixed;  
-  top: 480px;
+  bottom: 18vh;
   right: -10px;
   z-index: 5;
   transform: perspective(150px) rotateX(70deg) rotateZ(-60deg);
+  width: 22vw;
 }
 
 .menu:hover{
@@ -110,8 +112,72 @@ img:hover {
 }
 
 .menu-item:hover{
-  -webkit-text-stroke: 2px white;
+  font-size: 1.5rem;
 }
+
+.subheading{
+  font-size: 0.8rem;
+  hyphens: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .menu{
+    width: 25vw;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .menu{
+    width: 27vw;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .menu{
+    width: 29vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .menu{
+    width: 31vw;
+  }
+
+  h2{
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .menu{
+    width: 34vw;
+    bottom:16vh;
+  }
+  h1{
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menu{
+    width: 35vw;
+    bottom: 16vh;
+  }
+  h1{
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu{
+    width: 35vw;
+    bottom: 16vh;
+  }
+}
+
+
+
+
 
 /*SUBPAGES________________________________________________________________*/
 /*Images*/
@@ -199,7 +265,7 @@ img:hover {
 }
 
 .btn:hover{
-  -webkit-text-stroke: 3px white;
+  transform: scale(170%);
 }
 
 /*SONSTIGES_________________________________________________________________*/
