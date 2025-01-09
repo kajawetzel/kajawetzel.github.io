@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% include "head.html" %}
+
+<main>
+    <h1>Einreichungsformular</h1>
+    <form>
+        <label for="name">Gebäudename</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="plz">Postleitzahl</label><br>
+        <input type="text" id="plz" name="plz" required><br><br>
+
+        <label for="ort">Ort</label><br>
+        <input type="text" id="ort" name="ort" required><br><br>
+
+        <label for="email">E-Mail-Adresse</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="descriptione">Beschreibung</label><br>
+        <textarea id="description" name="description" rows="10" cols="30" required></textarea><br><br>
+
+        <label for="file">Bilder hochladen</label><br>
+        <input type="file" id="file" name="file" accept="image/*" required><br><br>
+
+        <button type="submit">Einreichen</button>
+    </form>
+</main>

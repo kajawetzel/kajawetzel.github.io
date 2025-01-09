@@ -66,7 +66,7 @@ line-height: 1.25;
   display: flex;
   margin-top: 9vh;
   width: 100%;
- /* animation: scroll-carousel 8s linear infinite; /* Continuous scrolling animation */
+ animation: scroll-carousel 8s linear infinite; /* Continuous scrolling animation */
 }
 
 .carousel-item {
@@ -170,10 +170,58 @@ img:hover {
 
 @media only screen and (max-width: 768px) {
   .menu{
-    width: 35vw;
-    bottom: 16vh;
+    transform: none;
+    bottom: 8vh;
+    right: 50px;
+    width: 70vw;
+  }
+
+  .menu:hover{
+    right: 50px;
+    transform: none;  
+  }
+
+  h1{
+    font-size: 5.5rem;
+  }
+
+  .subheading{
+    font-size: 1.3rem;
+    line-height: 1.1;
+    margin-top: -0.5rem;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .menu{
+    width: 60vw;
+    right: 120px;
+  }
+  h1{
+    font-size: 5rem;
+  }
+
+  .subheading{
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .menu{
+    width: 60vw;
+    right: 120px;
+  }
+  h1{
+    font-size: 4.7rem;
+  }
+
+  .subheading{
+    font-size: 1.1rem;
+  }
+}
+
+
+
 
 
 
