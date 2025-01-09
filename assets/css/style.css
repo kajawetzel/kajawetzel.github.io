@@ -119,6 +119,21 @@ img:hover {
   hyphens: auto;
 }
 
+.link-submit{
+  padding-top: 0.5rem;
+  text-transform: uppercase;
+  display: none;
+}
+
+.menu:hover .link-submit{
+  display: block;
+}
+
+.link-submit:hover{
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 1200px) {
   .menu{
     width: 25vw;
@@ -314,6 +329,17 @@ img:hover {
 .btn:hover{
   transform: scale(170%);
 }
+/*EINREICHEN_________________________________________________________________*/
+label{
+  color: white;
+  font-family: Font1;
+}
+
+.section-submission{
+  padding: 15px;
+}
+
+
 
 /*SONSTIGES_________________________________________________________________*/
 .invisible {
