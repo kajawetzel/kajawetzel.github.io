@@ -5,23 +5,21 @@ layout: layout.html
 <section class="section-submission">
     <h1>Leerräume einreichen</h1>
     <form>
-        <label for="name">Gebäudename</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+        <input type="text" id="name" name="name"placeholder="Gebäude-/Raumname" required><br><br>
         
-        <label for="plz">Postleitzahl</label><br>
-        <input type="text" id="plz" name="plz" required><br><br>
+        <input type="text" id="plz" name="plz" placeholder="Postleitzahl" required><br><br>
         
-        <label for="ort">Ort</label><br>
-        <input type="text" id="ort" name="ort" required><br><br>
+        <input type="text" id="ort" name="ort" placeholder="Ort" required><br><br>
 
-        <label for="email">E-Mail-Adresse</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" placeholder="E-Mail" required><br><br>
 
-        <label for="descriptione">Beschreibung</label><br>
-        <textarea id="description" name="description" rows="10" cols="30" required></textarea><br><br>
+        <textarea id="description" name="description" placeholder="Beschreibung und Tipps für Kontaktmöglichkeiten" rows="10" cols="30" required></textarea><br><br>
 
-        <label for="file">Bilder hochladen</label><br>
+        <div class="container-img-upload">
+        <label for="file" class="btn-upload-file">Bilder hochladen</label><br>
         <input type="file" id="file" name="file" accept="image/*" multiple required><br><br>
-        <button type="submit">Einreichen</button>
+        </div>
+
+        <button class="btn-submit" type="submit">Einreichen</button>
     </form>
 </section>
