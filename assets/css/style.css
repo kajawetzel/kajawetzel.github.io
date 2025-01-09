@@ -20,7 +20,7 @@ a{
   text-decoration: none;
 }
 
-main {
+body {
   overflow: hidden;
   background-color: black;
   width: 100vw;
