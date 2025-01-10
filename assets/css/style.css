@@ -64,7 +64,7 @@ line-height: 1.25;
   display: flex;
   margin-top: 9vh;
   width: 100%;
-  animation: scroll-carousel 8s linear infinite; /* Continuous scrolling animation */
+  animation: scroll-carousel 10s linear infinite; /* Continuous scrolling animation */
 }
 
 .carousel-item {
