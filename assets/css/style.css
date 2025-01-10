@@ -273,7 +273,8 @@ img:hover {
   }
 }
 
-/*SUBPAGES________________________________________________________________*/
+/*SUBPAGES_____________________________________________________________________________________________-*/
+/*POSTS________________________________________________________________*/
 /*Images*/
 .img-posts {
   height: 80vh;
@@ -316,14 +317,12 @@ img:hover {
 .section-text-posts{
   z-index: 10;
   position: relative;
-}
-
-.section-text-posts{
   display: flex;
   position: fixed;
   flex-direction: column;
   top: 15vh;
   left: 15vw;
+  width: 70vw;
 }
 
 .container-text-posts{
@@ -334,6 +333,8 @@ img:hover {
 .title-subpage{
   font-family: Font1;
   font-size: 4rem;
+  line-height: 0.9;
+  margin-bottom: 10px;
 }
 
 .description-text-subpage{
@@ -368,6 +369,16 @@ img:hover {
 .btn:hover{
   transform: scale(170%);
 }
+
+@media only screen and (max-width: 680px) {
+  
+
+}
+
+
+
+
+
 /*EINREICHEN_________________________________________________________________*/
 label{
   color: white;
