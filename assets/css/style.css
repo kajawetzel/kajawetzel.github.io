@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 html {
@@ -205,6 +204,15 @@ img:hover {
     line-height: 1.1;
     margin-top: -0.5rem;
   }
+
+  .link-submit{
+    display: block;
+    padding-top: 1rem;
+  }
+
+  .carousel{
+    animation: scroll-carousel 5s linear infinite;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -212,6 +220,11 @@ img:hover {
     width: 60vw;
     right: 120px;
   }
+
+  .menu:hover{
+    right: 120px;
+  }
+
   h1{
     font-size: 5rem;
   }
@@ -224,14 +237,39 @@ img:hover {
 @media only screen and (max-width: 576px) {
   .menu{
     width: 60vw;
-    right: 120px;
   }
+
   h1{
-    font-size: 4.7rem;
+    font-size: 4rem;
   }
 
   .subheading{
     font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1{
+    font-size: 3.3rem;
+  }
+
+  .menu{
+    width: 80vw;
+    right: 5vw;
+  }
+
+  .menu:hover{
+    right: 5vw;
+  }
+
+  .subheading{
+    font-size: 1.1rem;
+    line-height: 1;
+    padding-top: 7px;
+  }
+
+  .link-submit{
+    padding-top: 14px;
   }
 }
 
@@ -279,6 +317,7 @@ img:hover {
   z-index: 10;
   position: relative;
 }
+
 .section-text-posts{
   display: flex;
   position: fixed;
@@ -288,7 +327,7 @@ img:hover {
 }
 
 .container-text-posts{
-  width: 30vw;
+  width: 400px;
   margin-top: -5px;
 }
 
@@ -296,8 +335,14 @@ img:hover {
   font-family: Font1;
   font-size: 4rem;
 }
+
 .description-text-subpage{
   padding-top: 1rem;
+  line-height: 1.1;
+}
+
+.details-text-subpage{
+  font-size: 1rem;
 }
 
 /*Buttons*/
@@ -363,10 +408,6 @@ form{
   font-size: 0.8rem;
   display: hidden;
   cursor: pointer;
-}
-
-.btn-upload-file{
-
 }
 
 .container-img-upload{
