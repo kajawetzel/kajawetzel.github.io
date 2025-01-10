@@ -371,13 +371,42 @@ img:hover {
 }
 
 @media only screen and (max-width: 680px) {
-  
+  .img-posts {
+    height: 60vh;
+  }
 
+  .section-text-posts{
+    left: 19vw;
+  }
+  .container-text-posts{
+    width: 320px;
+  }
 }
 
+@media only screen and (max-width: 576px) {
+  .title-subpage{
+    font-size: 3.7rem;
+  }
 
+  .details-text-subpage{
+    font-size: 1rem;
+  }
+}
 
+@media only screen and (max-width: 480px) {
+  .section-text-posts{
+    left: 0vw;
+    padding: 15px;
+  }
 
+  .container-text-posts{
+    width: 87vw;
+  }
+
+  .details-text-subpage{
+    font-size: 0.9rem;
+  }
+}
 
 /*EINREICHEN_________________________________________________________________*/
 label{
