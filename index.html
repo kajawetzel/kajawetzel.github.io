@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script
+    defer src="https://identity.netlify.com/v1/netlify-identity-widget.js">
+    </script>
+    <title>
+        Leerräume
+    </title>
+</head>
+
+
+    <body>
+        <section class="section-gallery">
+    <div class="carousel">
+<p><div class="container-img"></p>
+<p><a class="img-link" target="_blank" href="/posts/kornhaus-engen/">
+<img class="carousel-item" src="/assets/images/post-1-img/post-1-img-1.jpg" alt="Kornhaus">
+</a></p>
+<p></div></p>
+<p><div class="container-img"></p>
+<p><a class="img-link" target="_blank" href="/posts/metzgerei-mayer-engen/">
+<img class="carousel-item" src="/assets/images/post-2-img/jpg/post-2-img-1.jpg" alt="Metzgerei Mayer">
+</a></p>
+<p></div></p>
+<p><div class="container-img"></p>
+<p><a class="img-link" target="_blank" href="/posts/golschmiede-lang-engen/">
+<img class="carousel-item" src="/assets/images/post-3-img/jpg/post-3-img-1.jpg" alt="Goldschmiede Lang">
+</a></p>
+<p></div></p>
+<p><div class="container-img"></p>
+<p><a class="img-link" target="_blank" href="/posts/baeckerei-engen/">
+<img class="carousel-item" src="/assets/images/post-4-img/jpg/post-4-img-1.jpg" alt="Bäckerei">
+</a></p>
+<p></div></p>
+<p></div></p>
+</section>
+<script src="/assets/js/main.js"></script>
+<section class="section-text-on-top" id="section-to-toggle">
+    <div class="menu">
+        <h1>Leerräume</h1>
+        <h2 class="subheading">
+          Sichtbarmachen von potenziellen Räumen für kreative Zwischennutzung im ländlichen Raum
+        </h2>
+        <a href="/submit/">
+            <h2 class="subheading link-submit">Leerraum einreichen</h2>
+        </a>
+    </div>
+</section> 
+<script>
+    if (window.netlifyIdentity) {         
+      window.netlifyIdentity.on("init", user => {          
+        if (!user) {          
+          window.netlifyIdentity.on("login", () => {          
+            document.location.href = "/admin/";          
+          });          
+        }
+      });
+    }
+</script>
+
+    </body>
+</html>
