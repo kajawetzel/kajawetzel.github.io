@@ -3,7 +3,7 @@ permalink: "/submit/"
 layout: layout.html
 ---
 <div class="section-gallery-submit">
-{% include "gallery.njk" %}
+{% include "gallery.html" %}
 </div>
 <section class="section-submission">
     <h1>Leerräume einreichen</h1>
